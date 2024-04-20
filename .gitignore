@@ -1,0 +1,4 @@
+node_modules
+.env
+src/categories/category.jpeg
+src/categories/category2.jpeg

@@ -1,0 +1,60 @@
+
+Token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjoiVGhlbyIsImxhc3ROYW1lIjoiTGVvIiwiZW1haWwiOiJ0aGVvQG1pdS5lZHUiLCJpc0FkbWluIjowLCJwaG9uZU51bWJlciI6bnVsbCwiaWF0IjoxNzA3MjM2ODQ4fQ.ZiVdDfbUR9Z7frLRioN2bosK0vKk1pd8QqpzI3ybhwE
+Admin Token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjoiVGhlbyIsImxhc3ROYW1lIjoiTGVvIiwiZW1haWwiOiJ0aGVvQG1pdS5lZHUiLCJpc0FkbWluIjoxLCJwaG9uZU51bWJlciI6bnVsbCwiY3JlYXRlZEF0IjoiMjAyNC0wMi0wNlQyMToyNzoyOC4wMDBaIiwibW9kaWZpZWRBdCI6IjIwMjQtMDItMDZUMjE6Mjk6MDkuMDAwWiIsImlhdCI6MTcwNzIzNzAzM30.2EJjW7qIGqd5BiiAZBBk0jg4AeO4EazC9TpTMtFEp5M
+###
+
+GET http://localhost:3000/category
+
+###
+DELETE http://localhost:3000/category/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjoiVGhlbyIsImxhc3ROYW1lIjoiTGVvIiwiZW1haWwiOiJ0aGVvQG1pdS5lZHUiLCJpc0FkbWluIjoxLCJwaG9uZU51bWJlciI6bnVsbCwiY3JlYXRlZEF0IjoiMjAyNC0wMi0wNlQyMToyNzoyOC4wMDBaIiwibW9kaWZpZWRBdCI6IjIwMjQtMDItMDZUMjE6Mjk6MDkuMDAwWiIsImlhdCI6MTcwNzIzNzAzM30.2EJjW7qIGqd5BiiAZBBk0jg4AeO4EazC9TpTMtFEp5M
+
+###
+POST http://localhost:3000/category
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjoiVGhlbyIsImxhc3ROYW1lIjoiTGVvIiwiZW1haWwiOiJ0aGVvQG1pdS5lZHUiLCJpc0FkbWluIjoxLCJwaG9uZU51bWJlciI6bnVsbCwiY3JlYXRlZEF0IjoiMjAyNC0wMi0wNlQyMToyNzoyOC4wMDBaIiwibW9kaWZpZWRBdCI6IjIwMjQtMDItMDZUMjE6Mjk6MDkuMDAwWiIsImlhdCI6MTcwNzIzNzAzM30.2EJjW7qIGqd5BiiAZBBk0jg4AeO4EazC9TpTMtFEp5M
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="name"
+
+Menss
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="description"
+
+Men's clothes
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="parentId"
+
+5
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="image"; filename="category.jpeg"
+Content-Type: image/jpeg
+
+< ./category.jpeg
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+PUT http://localhost:3000/category/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjoiVGhlbyIsImxhc3ROYW1lIjoiTGVvIiwiZW1haWwiOiJ0aGVvQG1pdS5lZHUiLCJpc0FkbWluIjoxLCJwaG9uZU51bWJlciI6bnVsbCwiY3JlYXRlZEF0IjoiMjAyNC0wMi0wNlQyMToyNzoyOC4wMDBaIiwibW9kaWZpZWRBdCI6IjIwMjQtMDItMDZUMjE6Mjk6MDkuMDAwWiIsImlhdCI6MTcwNzIzNzAzM30.2EJjW7qIGqd5BiiAZBBk0jg4AeO4EazC9TpTMtFEp5M
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="name"
+
+Menn
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="parentId"
+
+1
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="description"
+
+Men's Clothing Extra
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="image"; filename="category2.jpeg"
+Content-Type: image/jpeg
+
+< ./category2.jpeg
+------WebKitFormBoundary7MA4YWxkTrZu0gW--

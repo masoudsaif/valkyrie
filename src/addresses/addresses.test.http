@@ -1,0 +1,38 @@
+Token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjoiVGhlbyIsImxhc3ROYW1lIjoiTGVvIiwiZW1haWwiOiJ0aGVvQG1pdS5lZHUiLCJpc0FkbWluIjowLCJwaG9uZU51bWJlciI6bnVsbCwiaWF0IjoxNzA3MjM2ODQ4fQ.ZiVdDfbUR9Z7frLRioN2bosK0vKk1pd8QqpzI3ybhwE
+###
+GET http://localhost:3000/address
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjoiVGhlbyIsImxhc3ROYW1lIjoiTGVvIiwiZW1haWwiOiJ0aGVvQG1pdS5lZHUiLCJpc0FkbWluIjoxLCJwaG9uZU51bWJlciI6bnVsbCwiY3JlYXRlZEF0IjoiMjAyNC0wMi0wNlQyMToyNzoyOC4wMDBaIiwibW9kaWZpZWRBdCI6IjIwMjQtMDItMDZUMjE6Mjk6MDkuMDAwWiIsImlhdCI6MTcwNzIzNzAzM30.2EJjW7qIGqd5BiiAZBBk0jg4AeO4EazC9TpTMtFEp5M
+Content-Type: application/json
+###
+DELETE http://localhost:3000/address/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjoiVGhlbyIsImxhc3ROYW1lIjoiTGVvIiwiZW1haWwiOiJ0aGVvQG1pdS5lZHUiLCJpc0FkbWluIjoxLCJwaG9uZU51bWJlciI6bnVsbCwiY3JlYXRlZEF0IjoiMjAyNC0wMi0wNlQyMToyNzoyOC4wMDBaIiwibW9kaWZpZWRBdCI6IjIwMjQtMDItMDZUMjE6Mjk6MDkuMDAwWiIsImlhdCI6MTcwNzIzNzAzM30.2EJjW7qIGqd5BiiAZBBk0jg4AeO4EazC9TpTMtFEp5M
+###
+POST http://localhost:3000/address
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjoiVGhlbyIsImxhc3ROYW1lIjoiTGVvIiwiZW1haWwiOiJ0aGVvQG1pdS5lZHUiLCJjb21wYW55SWQiOm51bGwsImlzQWRtaW4iOjAsInBob25lTnVtYmVyIjpudWxsLCJpc0VtYWlsVmVyaWZpZWQiOjAsImlzUGhvbmVWZXJpZmllZCI6MCwiZW1haWxUb2tlbiI6bnVsbCwicGhvbmVUb2tlbiI6bnVsbCwiY3JlYXRlZEF0IjoiMjAyNC0wMi0wOVQxOTowNzowNi4wMDBaIiwibW9kaWZpZWRBdCI6IjIwMjQtMDItMDlUMTk6MDc6MDYuMDAwWiIsImlhdCI6MTcwNzQ4Nzg1MSwiZXhwIjoxNzA3NDg3OTExfQ.Ra1C6g5EDcORt-hXk2HvPQlWBoCbMGp3--ZeduZuq3o
+Content-Type: application/json
+
+{
+    "street": "1000 n 4th st",
+    "unit": "#mr176",
+    "city": "fairfield",
+    "state": "ia",
+    "stateId": 15,
+    "zip": "52557",
+    "isBilling": true,
+    "isPrimary": true
+}
+###
+PUT http://localhost:3000/address/13
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjoiVGhlbyIsImxhc3ROYW1lIjoiTGVvIiwiZW1haWwiOiJ0aGVvQG1pdS5lZHUiLCJpc0FkbWluIjoxLCJwaG9uZU51bWJlciI6bnVsbCwiY3JlYXRlZEF0IjoiMjAyNC0wMi0wNlQyMToyNzoyOC4wMDBaIiwibW9kaWZpZWRBdCI6IjIwMjQtMDItMDZUMjE6Mjk6MDkuMDAwWiIsImlhdCI6MTcwNzIzNzAzM30.2EJjW7qIGqd5BiiAZBBk0jg4AeO4EazC9TpTMtFEp5M
+Content-Type: application/json
+
+{
+    "street": "500 n 4th st",
+    "unit": "#mr176",
+    "city": "fairfield",
+    "state": "ia",
+    "zip": "52557",
+    "stateId": 15,
+    "isPrimary": false
+}

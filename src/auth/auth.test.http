@@ -1,0 +1,32 @@
+POST http://localhost:3000/auth/sign-up
+Content-Type: application/json
+
+{
+    "firstName": "theo",
+    "lastName": "leO",
+    "email": "tHEo@miu.edu",
+    "password": "123456"
+}
+###
+POST http://localhost:3000/auth/sign-up
+Content-Type: application/json
+
+{
+    "firstName": "theo",
+    "lastName": "leO",
+    "email": "molecule_gaming@outlook.com",
+    "password": "123456",
+    "company": {
+        "name": "Phoenix",
+        "typeId": 1,
+        "sizeId": 1
+    }
+}
+###
+POST http://localhost:3000/auth/sign-in
+Content-Type: application/json
+
+{
+    "email": "tHEo@miu.edu",
+    "password": "123456"
+}

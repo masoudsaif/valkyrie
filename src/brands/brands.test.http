@@ -14,7 +14,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROY
 Content-Type: application/json
 
 {
-    "name": "Brand Name"
+    "name": "Brand Namee"
 }
 ###
 PUT http://localhost:3000/brand/1

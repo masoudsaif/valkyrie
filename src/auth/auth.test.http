@@ -14,7 +14,7 @@ Content-Type: application/json
 {
     "firstName": "theo",
     "lastName": "leO",
-    "email": "molecule_gaming@outlook.com",
+    "email": "mohamed_sarhan@gmail.com",
     "password": "123456",
     "company": {
         "name": "Phoenix",
@@ -25,8 +25,7 @@ Content-Type: application/json
 ###
 POST http://localhost:3000/auth/sign-in
 Content-Type: application/json
-
 {
-    "email": "tHEo@miu.edu",
+    "email": "tHEooo@miu.edu",
     "password": "123456"
 }
